@@ -7,5 +7,8 @@ proc main() =
   # Exercise 2
   exercise_2("Filipe Santos")
 
+  # Exercise 3
+  exercise_3(30)
+
 when is_main_module:
   main()
