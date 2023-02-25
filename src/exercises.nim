@@ -12,3 +12,15 @@ proc exercise_1*(number: int32) =
         num = (3 * num) + 1
 
     echo "Number: " & $num
+
+proc exercise_2*(text: string) =
+    if len(text) <= 0:
+        return
+
+    for letter in text:
+
+        case letter:
+            of 'a', 'e', 'i', 'o', 'u':
+                echo letter
+
+            else: discard
