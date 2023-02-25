@@ -1,3 +1,7 @@
+# nim
+import std/strformat
+
+
 proc exercise_1*(number: int32) =
     if number <= 0:
         return
@@ -43,3 +47,11 @@ proc exercise_3*(rounds: int32) =
             continue
 
         echo(idx)
+
+proc exercise_4*(values_in: openArray[float64]) =
+    echo("in   |  cm   \n---------------")
+    
+    for value_in in values_in:
+        let value_cm = value_in * 2.54
+
+        echo(fmt("{value_in}  |  {value_cm}"))
