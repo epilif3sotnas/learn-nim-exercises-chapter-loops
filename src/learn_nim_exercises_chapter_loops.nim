@@ -1,4 +1,7 @@
-import exercises
+# internal
+import
+  ./exercises
+
 
 proc main() =
   # Exercise 1

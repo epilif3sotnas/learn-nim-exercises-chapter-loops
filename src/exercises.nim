@@ -1,5 +1,6 @@
-# nim
-import std/strformat
+# std
+import
+    std/strformat
 
 
 proc exercise_1*(number: int32) =
